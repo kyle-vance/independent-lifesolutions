@@ -1,11 +1,148 @@
+/* Body styles */
 /* body {
-    font-family: 'Roboto', sans-serif  !important ;
-    font-size: 20px   !important ;
-    color: #000000  !important ;
-}; */
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 20px !important;
+    color: #000000 !important;
+} */
 
 /* Override Bootstrap link color */
 .footerLinks {
     color: #ffffff !important; /* Your desired link color */
-    
+}
+
+.footer {
+    --bs-bg-opacity: 1;
+    background-color: rgb(9 58 124) !important;
+}
+
+.logo {
+    max-width: 50vw;
+}
+
+.img1 {
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100vw;
+    max-height: 70vh;
+    opacity: 0.6;
+}
+
+.container1 {
+    position: relative;
+    width: 100%;
+}
+
+.overlay1 {
+    position: absolute;
+    top: 20%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.overlay1 h2 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    color: rgb(9 58 124);
+    font-weight: bolder;
+}
+
+.overlay p {
+    font-size: 1.2em;
+}
+
+.overlay1 a.btn {
+    background-color: rgb(9, 58, 124); /* Blue background */
+    color: white; /* Text color */
+    border: 2px solid rgb(9, 58, 124); /* Border color */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle box shadow for depth */
+}
+
+.overlay1 a.btn:hover {
+    background-color: rgb(14, 79, 164); /* Slightly darken the background color on hover */
+    border-color: white; /* Highlight edges in white */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhance box shadow for more depth */
+}
+
+/* Navbar styles */
+.navbar-collapse {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Align all items to the right */
+    width: 100%;
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: flex-end; /* Align items to the right */
+    width: 100%;
+    margin-bottom: 10px; /* Add space below the navbar items */
+}
+
+.navbar-nav .nav-item {
+    position: relative;
+}
+
+.navbar-nav .nav-item:not(:last-child) {
+    margin-right: 20px; /* Adjust spacing between navbar items */
+}
+
+/* Vertical line styles */
+.navbar-divider {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -10px; /* Adjust the position of the vertical line */
+    margin: auto 0; /* Center the vertical line */
+    width: 1px;
+    background-color: white; /* Start with white color */
+    transition: height 0.3s, background-color 0.3s; /* Smooth transition for background color */
+}
+
+.navbar-nav .nav-item:hover .navbar-divider {
+    height: 100%; /* Increase height on hover */
+    background-color: rgb(14, 79, 164); /* Change background color on hover */
+}
+
+.navbar-nav .nav-item:hover .navbar-divider-left {
+    left: -10px; /* Adjust the position of the vertical line */
+}
+
+.navbar-nav .nav-item:hover .navbar-divider-right {
+    right: -10px; /* Adjust the position of the vertical line */
+}
+
+.navbar-nav .nav-item .navbar-divider-left,
+.navbar-nav .nav-item .navbar-divider-right {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background-color: white; /* Start with white color */
+    transition: height 0.3s, background-color 0.3s; /* Smooth transition for background color */
+}
+
+/* "Book a Consultation" button styles */
+.consultation-btn {
+    padding: 10px 120px;
+    border-radius: 10px; /* Slightly rounded edges */
+    font-weight: bold;
+    background-color: white;
+    color: rgb(9 58 124);
+    border: 1px solid rgb(9 58 124); /* Adding a border to match the text color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adding a subtle shadow */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+}
+
+.consultation-btn:hover {
+    background-color: white; /* Ensure background color stays white on hover */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow on hover */
 }
