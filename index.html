@@ -10,6 +10,8 @@
     <link rel="stylesheet" type="text/css" href="./assets/styles.css" />
     <!--custom bootstrap css-->
     <link rel="stylesheet" type="text/css" href="./assets/custom.css" />
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
     <script src="assets\js\head.js"></script>
 </head>
 
@@ -27,7 +29,7 @@
                     <h2>Independent living solutions for the elderly, veterans, and individuals with disabilities</h2>
                     <p></p>
                     <!-- Add calenderly link here -->
-                    <a href="#" class="btn">Book a Consultation</a>
+                    <a href="#" class="btn" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/vb--ssd'});return false;">Book a Consultation</a>
                 </div>
             </div>
         </div>
@@ -62,7 +64,6 @@
         
 
         <hr class="custom-hr">
-
 
         <!-- Contact us form -->
         <div id="contact-placeholder"></div>

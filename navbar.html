@@ -1,61 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Website Title</title>
-    <link rel="stylesheet" type="text/css" href="./assets/jass.css" />
-    <link rel="stylesheet" type="text/css" href="./assets/styles.css" />
-    <link rel="stylesheet" type="text/css" href="./assets/custom.css" />
-    <script src="assets/js/navbar.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Website Title</title>
+  <link rel="stylesheet" type="text/css" href="./assets/jass.css" />
+  <link rel="stylesheet" type="text/css" href="./assets/styles.css" />
+  <link rel="stylesheet" type="text/css" href="./assets/custom.css" />
+
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+
+  <script src="assets/js/navbar.js"></script>
 </head>
+
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-light text-white" style="background-color: rgb(9, 58, 124)">
+  <nav class="navbar navbar-expand-lg navbar-light text-white" style="background-color: rgb(9, 58, 124)">
     <div class="container-fluid">
-        <div>
-            <a class="navbar-brand" href="index.html">
-                <img class="logo" src="assets/images/logo-small.jpg" alt="Logo">
-            </a>
-        </div>
+      <div>
+        <a class="navbar-brand" href="index.html">
+          <img class="logo" src="assets/images/logo-small.jpg" alt="Logo">
+        </a>
+      </div>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul class="navbar-nav" style="font-size: 20px;">
-                <li class="nav-item active">
-                    <a class="nav-link text-white" style="font-size: 30px;" href="index.html">Home</a>
-                    <div class="navbar-divider"></div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" style="font-size: 30px; padding-left: 10px;"
-                       href="services.html">Services</a>
-                    <div class="navbar-divider"></div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" style="font-size: 30px; padding-left: 10px;"
-                       href="story.html">Our Story</a>
-                    <div class="navbar-divider"></div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" style="font-size: 30px; padding-left: 10px;"
-                       href="contactus.html">Contact Us</a>
-                    <div class="navbar-divider"></div>
-                </li>
-            </ul>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav" style="font-size: 20px;">
+          <li class="nav-item active">
+            <a class="nav-link text-white" style="font-size: 30px;" href="index.html">Home</a>
+            <div class="navbar-divider"></div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" style="font-size: 30px; padding-left: 10px;"
+              href="services.html">Services</a>
+            <div class="navbar-divider"></div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" style="font-size: 30px; padding-left: 10px;" href="story.html">Our Story</a>
+            <div class="navbar-divider"></div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" style="font-size: 30px; padding-left: 10px;" href="contactus.html">Contact
+              Us</a>
+            <div class="navbar-divider"></div>
+          </li>
+        </ul>
 
-            <!-- "Book a Consultation" button -->
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link consultation-btn" href="#" role="button">Book a Consultation</a>
-                </li>
-            </ul>
-        </div>
+        <!-- "Book a Consultation" button -->
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link consultation-btn" href="#" role="button" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/vb--ssd'});return false;">Book a Consultation</a>
+        </li>
+        </ul>
+      </div>
     </div>
-</nav>
+  </nav>
 
 </body>
+
 </html>
