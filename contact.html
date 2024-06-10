@@ -13,12 +13,12 @@
     <script src="assets\js\head.js"></script>
 </head>
 
-  <body>
-    <section id="contactFormSection" class="contact-form-container mt-5">
-                <h2>Drop us a line.</h2>
+<body>
+    <!-- <section id="contactFormSection" class="contact-form-container mt-5">
+        <h2>Drop us a line.</h2>
         <h4>No commitment</h4>
         <h4>No high-pressure sales tactics</h4>
-      
+
         <form id="contactForm" class="needs-validation">
             <div class="mb-3">
                 <label for="name" class="form-label">Your Name</label>
@@ -31,9 +31,9 @@
                 <div class="invalid-feedback">Please enter a valid email address.</div>
             </div>
             <div class="mb-3">
-                <label for="subject" class="form-label">Subject</label>
-                <input type="text" class="form-control" id="subject" name="subject" required>
-                <div class="invalid-feedback">Please enter a subject.</div>
+                <label for="phone" class="form-label">Phone Number</label>
+                <input type="text" class="form-control" id="phone" name="phone" required>
+                <div class="invalid-feedback">Please enter your phone number.</div>
             </div>
             <div class="mb-3">
                 <label for="message" class="form-label">Message</label>
@@ -41,24 +41,56 @@
                 <div class="invalid-feedback">Please enter a message.</div>
             </div>
             <button id="submit" type="submit" class="btn">Submit</button>
-        </form>
-      
-        <!-- Notification Message -->
-        <div id="notification" class="alert alert-success mt-3 d-none" role="alert">
-            Your message was successfully sent. We will reach out to you shortly.
-        </div>
-    </section>
-    
-          
-<!-- Footer -->
-<div id="footer-placeholder"></div>
-</main>
+        </form> -->
 
-<!-- Javascript links -->
-<script src="assets\js\idl.js"></script>
-<script src="assets\js\footer.js"></script>
-<script src="assets\js\navbar.js"></script>
-<script src="assets\js\contact.js"></script>
+    <!-- Notification Message -->
+    <!-- <div id="notification" class="alert alert-success mt-3 d-none" role="alert">
+            Your message was successfully sent. We will reach out to you shortly.
+        </div> -->
+
+    </section>
+    <style>
+        /* Centering the iframe and making it responsive */
+        .centered-iframe-container {
+            display: flex;
+            justify-content: center;
+            /* Center horizontally */
+            align-items: center;
+            /* Center vertically if needed */
+            width: 100%;
+            padding: 20px;
+            /* Optional: add padding for spacing */
+        }
+
+        .centered-iframe {
+            max-width: 100%;
+            width: 640px;
+            /* Adjust as needed */
+            height: 1000px;
+            /* Adjust as needed */
+            border: 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            /* Optional: add a subtle shadow */
+            border-radius: 10px;
+            /* Optional: add rounded corners */
+        }
+    </style>
+
+    <div class="centered-iframe-container">
+        <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLSfSwOJBktYv1vSZGFqYHr7UKO9qJdtvCxph8QJiFn_rGaqB2g/viewform?embedded=true"
+            class="centered-iframe" marginheight="0" marginwidth="0"></iframe>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+    </main>
+
+    <!-- Javascript links -->
+    <script src="assets\js\idl.js"></script>
+    <script src="assets\js\footer.js"></script>
+    <script src="assets\js\navbar.js"></script>
+    <script src="assets\js\contact.js"></script>
 
 </body>
 

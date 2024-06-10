@@ -35,10 +35,6 @@
 }
 
 .overlay1 {
-    position: absolute;
-    top: 20%;
-    left: 60%;
-    transform: translate(-50%, -50%);
     text-align: center;
     color: white;
 }
@@ -70,6 +66,32 @@
     border-color: white; /* Highlight edges in white */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhance box shadow for more depth */
 }
+.container2 {
+    text-align: center;
+    padding: 20px; /* Add some padding for vertical spacing */
+}
+
+.container2 a.btn {
+    background-color: rgb(9, 58, 124); /* Blue background */
+    color: white; /* Text color */
+    border: 2px solid rgb(9, 58, 124); /* Border color */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle box shadow for depth */
+}
+
+.container2 a.btn:hover {
+    background-color: rgb(14, 79, 164); /* Slightly darken the background color on hover */
+    border-color: white; /* Highlight edges in white */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhance box shadow for more depth */
+}
+
+.container2 h2 {
+    text-align: center;
+}
+
 
 /* Navbar styles */
 .navbar-collapse {
@@ -160,41 +182,43 @@
     border-color: white; /* Highlight border in white on hover */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow on hover */
 }
-
-
-
-
-
-
-
-
-/* "Book a Consultation" button styles */
-.consultation-btn {
-    width: 350px;
-    height: 50px; /* Adjust height as needed */
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    margin-right: 100px; /* Add margin to the right */
-    margin-top: 20px;
-    border-radius: 10px; /* Slightly rounded edges */
-    font-weight: bold;
-    background-color: white;
-    color: rgb(9 58 124);
-    border: 2px solid rgb(9 58 124); /* Adding a border to match the text color */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adding a subtle shadow */
-    transition: background-color 0.3s, box-shadow 0.3s, border-color 0.3s; /* Smooth transition for hover effects */
+@media (min-width: 768px) {
+    .container2 {
+        display:none;
+    }
 }
+@media (max-width: 768px) {
+    .img1 {
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 100%;
+        max-height: 50vh;
+        object-fit: cover;
+    }
 
-.consultation-btn:hover {
-    background-color: rgb(9, 58, 124); /* Change background color on hover */
-    border-color: rgb(9, 58, 124); /* Border color on hover */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhance box shadow for more depth */
+    .container1 {
+   display: none;
+    }
+
+    .overlay1 h2 {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
+
+    .overlay1 p {
+        font-size: 1em;
+        line-height: 1.4;
+    }
+
+    .consultation-btn {
+        width: 100%;
+        max-width: 300px;
+        margin: 20px auto;
+    }
+
+    .container1 {
+        width: 100%;
+    }
 }
-
-.consultation-btn:hover {
-    background-color: white; /* Ensure background color stays white on hover */
-    border-color: white; /* Highlight border in white on hover */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow on hover */
-}
-
